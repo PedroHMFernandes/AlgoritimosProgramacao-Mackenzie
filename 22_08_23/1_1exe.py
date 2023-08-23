@@ -10,4 +10,3 @@ for n in range(4):
 
 media = soma_notas / cont
 print(f'A média aritimética do bimestre é {media}')
-
