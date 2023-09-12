@@ -39,6 +39,7 @@ while True:
         print(f'{vermelho}ERRO! Opção inválida, tente novamente:{branco}')
         opcao_menu = int(input('SUA OPÇÃO: '))
     os.system('cls')
+
     # CADASTRAR CATEGORIAS E LIMITES
     if opcao_menu == 1:
         if limites_cadastrados == False:
