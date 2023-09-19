@@ -74,7 +74,7 @@ while True:
                 print(
                     'SISTEMA DE CONTROLE DE ORÇAMENTO - DESPESA DIÁRIA\n')
                 print(
-                    f'\t{verde}(A) ALIMENTO - R${despesa_alimentos:,.2f}{branco}' if a_cadastrado else '\t(A) ALIMENTO')
+                    f'{verde}\t(A) ALIMENTO - R${despesa_alimentos:,.2f}{branco}' if a_cadastrado else '\t(A) ALIMENTO')
                 print(
                     f'{verde}\t(T) TRANSPORTE - R${despesa_transporte:,.2f}{branco}' if t_cadastrado else '\t(T) TRANSPORTE')
                 print(
@@ -203,9 +203,11 @@ while True:
             if not e_cadastrado:
                 print('Falta cadastrar: (E) ENTRETENIMENTO')
         print()
+
     # FINALIZAR PROGRAMA
     elif opcao_menu == 4:
         print('Este programa foi desenvolvido por:')
         print('Pedro Henrique Mansano Fernandes - 42303885')
-        print()
+        print('Mihael Rommel Barbosa Xavier - 32307861')
+        print('David Wei Bo Pan - 32330138')
         break
