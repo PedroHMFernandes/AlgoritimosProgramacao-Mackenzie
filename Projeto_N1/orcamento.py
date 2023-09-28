@@ -1,3 +1,7 @@
+# Pedro Henrique Mansano Fernandes - 42303885
+# Mihael Rommel Barbosa Xavier - 32307861
+# David Wei Bo Pan - 32330138
+
 import os
 
 
@@ -10,12 +14,12 @@ s_cadastrado = False
 e_cadastrado = False
 vermelho = '\033[31m'
 verde = '\033[32m'
-azul = '\033[34m'
 ciano = '\033[36m'
-magenta = '\033[35m'
 amarelo = '\033[33m'
-preto = '\033[30m'
 branco = '\033[37m'
+# azul = '\033[34m'
+# preto = '\033[30m'
+# magenta = '\033[35m'
 
 
 def excedeu(limite, despesa):
