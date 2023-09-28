@@ -9,3 +9,34 @@
 # a) para cada empregado, o salário reajustado (conforme tabela);
 # b) a quantidade de empregados que receberam reajuste de 10%;
 # c) o salário médio (após o reajuste) entre os empregados;
+
+empregados = []
+cont_10 = 0
+media = 0
+media_reajuste = 0
+
+quantidade_a_cadastrar = int(input('Quantidade de funcionários a cadastrar: '))
+for cadastro in range(quantidade_a_cadastrar):
+    nome = input('Nome: ').title()
+    salario = float(input('Salário: R$'))
+    if salario < 2000:
+        salario_acrescido = salario * 1.12
+    elif salario < 3000:
+        salario_acrescido = salario * 1.10
+        cont_10 += 1
+    else:
+        salario_acrescido = salario * 1.08
+    pessoa_cadastrada = {'nome': nome, 'salario': salario,
+                         'salario_acrescido': salario_acrescido}
+    empregados.append(pessoa_cadastrada)
+
+print()
+for pessoa in empregados:
+    print(
+        f'{pessoa["nome"]} - Salario: R${pessoa["salario"]:.2f}\nReajustado: R${pessoa["salario_acrescido"]:.2f} ')
+    media += pessoa['salario']/len(empregados)
+    media_reajuste += pessoa['salario_acrescido']/len(empregados)
+print()
+print(f'Média antes do reajuste: R${media:.2f}')
+print(f'Média após reajuste: R${media_reajuste:.2f}')
+print(f'Quantidades de 10% de reajuste: {cont_10}')
