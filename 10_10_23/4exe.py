@@ -37,7 +37,7 @@ def verificaIntervalo():
         print('O início deve ser menor que o fim!')
         inicio = int(input('Digite o início do intervalo: '))    
         fim = int(input('Digite o fim do intervalo: '))
-    return(inicio, fim)
+    return inicio, fim
 
 def exibeFahrenheitToCelsius(inicio, fim):
     for temp in range(inicio, fim + 1):
