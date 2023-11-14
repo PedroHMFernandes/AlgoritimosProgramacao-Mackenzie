@@ -43,7 +43,6 @@ def cadastrar_conta_corrente():
         return
 
     print('MACK BANK - CADASTRO DE CONTA')
-
     numero_conta = random.randint(1000, 9999)
     print('NÚMERO DA CONTA: ', numero_conta,
           f'{vermelho}(NÃO PERCA!){branco}')
@@ -119,6 +118,8 @@ def depositar():
                 f'{vermelho}ATENÇÃO{branco}: R${diferenca:,.2f} do seu depósito foi utilizado para pagar o crédito usado.')
             print(
                 f'O restante (R${valor_deposito:,.2f}) foi depositado em sua conta corrente.')
+        saldo += valor_deposito
+    else:
         saldo += valor_deposito
 
     print('\nDEPÓSITO REALIZADO COM SUCESSO!\n')
